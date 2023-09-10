@@ -124,15 +124,6 @@ PLATFORM_VERSION := 16.1.0
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 BOARD_SUPPRESS_SECURE_ERASE := true
 
-# Recovery modules
-TARGET_RECOVERY_DEVICE_MODULES += \
-    libkeymaster4 \
-    libpuresoftkeymasterdevice
-
-RECOVERY_LIBRARY_SOURCE_FILES += \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster4.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libpuresoftkeymasterdevice.so
-
 # Hardware
 BOARD_USES_MTK_HARDWARE := true
 
