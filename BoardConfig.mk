@@ -78,6 +78,7 @@ BOARD_OPPO_DYNAMIC_PARTITIONS_SIZE := 9122611200 # TODO: Fix hardcoded value
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6779
+PRODUCT_PLATFORM := mt6779
 
 # Crypto
 TW_INCLUDE_CRYPTO := true
@@ -97,6 +98,22 @@ VENDOR_SECURITY_PATCH := 2021-08-01
 PLATFORM_SECURITY_PATCH := 2099-12-31
 VENDOR_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 16.1.0
+
+# System as root
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
+BOARD_SUPPRESS_SECURE_ERASE := true
+
+# Recovery modules
+TARGET_RECOVERY_DEVICE_MODULES += \
+    libkeymaster4 \
+    libpuresoftkeymasterdevice
+
+RECOVERY_LIBRARY_SOURCE_FILES += \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster4.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libpuresoftkeymasterdevice.so
+
+# Hardware
+BOARD_USES_MTK_HARDWARE := true
 
 # TWRP-Specific configuration
 TW_THEME := portrait_hdpi
