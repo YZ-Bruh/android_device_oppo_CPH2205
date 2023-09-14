@@ -30,35 +30,35 @@ auto                      vfat     /devices/platform/11200000.usb3_xhci*     fla
 /misc                     emmc     /dev/block/by-name/misc                   flags=backup=1;display=MİSC;flashimg=1
 /boot                     emmc     /dev/block/by-name/boot                   flags=backup=1;display=BOOT;flashimg=1
 /recovery                 emmc     /dev/block/by-name/recovery               flags=backup=1;display=Recovery;flashimg=1
-/vbmeta_vendor            emmc     /dev/block/by-name/vbmeta_vendor          flags=backup=1;display=VBMeta Vendor
-/vbmeta_system            emmc     /dev/block/by-name/vbmeta_system          flags=backup=1;display=VBMeta System
-/logo                     emmc     /dev/block/by-name/logo                   flags=backup=1;display=Logo
-/expdb                    emmc     /dev/block/by-name/expdb                  flags=backup=1;display=EXPDB
-/seccfg                   emmc     /dev/block/by-name/seccfg                 flags=backup=1;display=SECCFG
-/tee1                     emmc     /dev/block/by-name/tee1                   flags=backup=1;display=Tee 1
-/tee2                     emmc     /dev/block/by-name/tee2                   flags=backup=1;display=Tee 2
-/scp1                     emmc     /dev/block/by-name/scp1                   flags=backup=1;display=SCP 1
-/scp2                     emmc     /dev/block/by-name/scp2                   flags=backup=1;display=SCP 2
-/sspm_1                   emmc     /dev/block/by-name/sspm_1                 flags=backup=1;display=SSPM 1
-/sspm_2                   emmc     /dev/block/by-name/sspm_2                 flags=backup=1;display=SSPM 2
-/md1img                   emmc     /dev/block/by-name/md1img                 flags=backup=1;display=MD1 İMG
-/md1dsp                   emmc     /dev/block/by-name/md1dsp                 flags=backup=1;display=MD1 DSP
-/md1arm7                  emmc     /dev/block/by-name/md1arm7                flags=backup=1;display=MD1 ARM7
-/md3img                   emmc     /dev/block/by-name/md3img                 flags=backup=1;display=MD3 İMG
-/cam_vpu1                 emmc     /dev/block/by-name/cam_vpu1               flags=backup=1;display=CAM VPU 1
-/cam_vpu2                 emmc     /dev/block/by-name/cam_vpu2               flags=backup=1;display=CAM VPU 2
-/cam_vpu3                 emmc     /dev/block/by-name/cam_vpu3               flags=backup=1;display=CAM VPU 3
-/gz1                      emmc     /dev/block/by-name/gz1                    flags=backup=1;display=GZ1
-/gz2                      emmc     /dev/block/by-name/gz2                    flags=backup=1;display=GZ2
-/spmfw                    emmc     /dev/block/by-name/spmfw                  flags=backup=1;display=SPMFW
-/audio_dsp                emmc     /dev/block/by-name/audio_dsp              flags=backup=1;display=Audio DSP
-/boot_para                emmc     /dev/block/by-name/boot_para              flags=backup=1;display=BOOT Para
-/odmdtbo                  emmc     /dev/block/by-name/odmdtbo                flags=backup=1;display=ODMDTBO
-/dtbo                     emmc     /dev/block/by-name/dtbo                   flags=backup=1;display=DTBO
-/otp                      emmc     /dev/block/by-name/otp                    flags=backup=1;display=OTP
-/custom                   ext4     /dev/block/by-name/odm                    flags=backup=1;display=Custom
-/external_sd              vfat     /dev/block/mmcblk0p1                      flags=backup=1;display=MicroSD Card
-/usb_otg                  vfat     /dev/block/sdd1                           flags=backup=1;display=USB-OTG
-/vbmeta                   emmc     /dev/block/by-name/vbmeta                 flags=backup=1;display=VBMeta
-/reserve2                 emmc     /dev/block/by-name/reserve2               flags=backup=1;display=Reserve 2
-/opporeserve              ext4     /dev/block/by-name/opporeserve2           flags=backup=1;display=OPPO Reserve
+/vbmeta_vendor            emmc     /dev/block/by-name/vbmeta_vendor          flags=backup=1;display=VBMeta Vendor;flashimg=1
+/vbmeta_system            emmc     /dev/block/by-name/vbmeta_system          flags=backup=1;display=VBMeta System;flashimg=1
+/logo                     emmc     /dev/block/by-name/logo                   flags=backup=1;display=Logo;flashimg=1
+/expdb                    emmc     /dev/block/by-name/expdb                  flags=backup=1;display=EXPDB;flashimg=1
+/seccfg                   emmc     /dev/block/by-name/seccfg                 flags=backup=1;display=SECCFG;flashimg=1
+/tee1                     emmc     /dev/block/by-name/tee1                   flags=backup=1;display=Tee 1;flashimg=1
+/tee2                     emmc     /dev/block/by-name/tee2                   flags=backup=1;display=Tee 2;flashimg=1
+/scp1                     emmc     /dev/block/by-name/scp1                   flags=backup=1;display=SCP 1;flashimg=1
+/scp2                     emmc     /dev/block/by-name/scp2                   flags=backup=1;display=SCP 2;flashimg=1
+/sspm_1                   emmc     /dev/block/by-name/sspm_1                 flags=backup=1;display=SSPM 1;flashimg=1
+/sspm_2                   emmc     /dev/block/by-name/sspm_2                 flags=backup=1;display=SSPM 2;flashimg=1
+/md1img                   emmc     /dev/block/by-name/md1img                 flags=backup=1;display=MD1 İMG;flashimg=1
+/md1dsp                   emmc     /dev/block/by-name/md1dsp                 flags=backup=1;display=MD1 DSP;flashimg=1
+/md1arm7                  emmc     /dev/block/by-name/md1arm7                flags=backup=1;display=MD1 ARM7;flashimg=1
+/md3img                   emmc     /dev/block/by-name/md3img                 flags=backup=1;display=MD3 İMG;flashimg=1
+/cam_vpu1                 emmc     /dev/block/by-name/cam_vpu1               flags=backup=1;display=CAM VPU 1;flashimg=1
+/cam_vpu2                 emmc     /dev/block/by-name/cam_vpu2               flags=backup=1;display=CAM VPU 2;flashimg=1
+/cam_vpu3                 emmc     /dev/block/by-name/cam_vpu3               flags=backup=1;display=CAM VPU 3;flashimg=1
+/gz1                      emmc     /dev/block/by-name/gz1                    flags=backup=1;display=GZ1;flashimg=1
+/gz2                      emmc     /dev/block/by-name/gz2                    flags=backup=1;display=GZ2;flashimg=1
+/spmfw                    emmc     /dev/block/by-name/spmfw                  flags=backup=1;display=SPMFW;flashimg=1
+/audio_dsp                emmc     /dev/block/by-name/audio_dsp              flags=backup=1;display=Audio DSP;flashimg=1
+/boot_para                emmc     /dev/block/by-name/boot_para              flags=backup=1;display=BOOT Para;flashimg=1
+/odmdtbo                  emmc     /dev/block/by-name/odmdtbo                flags=backup=1;display=ODMDTBO;flashimg=1
+/dtbo                     emmc     /dev/block/by-name/dtbo                   flags=backup=1;display=DTBO;flashimg=1
+/otp                      emmc     /dev/block/by-name/otp                    flags=backup=1;display=OTP;flashimg=1
+/custom                   ext4     /dev/block/by-name/odm                    flags=backup=1;display=Custom;flashimg=1
+/external_sd              vfat     /dev/block/mmcblk0p1                      flags=display=MicroSD Card
+/usb_otg                  vfat     /dev/block/sdd1                           flags=display=USB-OTG
+/vbmeta                   emmc     /dev/block/by-name/vbmeta                 flags=backup=1;display=VBMeta;flashimg=1
+/reserve2                 emmc     /dev/block/by-name/reserve2               flags=backup=1;display=Reserve 2;flashimg=1
+/opporeserve              ext4     /dev/block/by-name/opporeserve2           flags=backup=1;display=OPPO Reserve;flashimg=1
