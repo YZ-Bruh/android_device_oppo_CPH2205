@@ -6,11 +6,11 @@
 /my_engineering           ext4     my_engineering                            flags=backup=1;display=My Engineering;logical;flashimg=1
 /my_company               ext4     my_company.netease                        flags=backup=1;display=My Company;logical;flashimg=1
 /my_carrier               ext4     my_carrier.vdf                            flags=backup=1;display=My Carrier;logical;flashimg=1
-/my_region                ext4     my_region.japan                           flags=backup=1;display=My Region;logical;flashimg=1
+/my_region                ext4     my_region.turkey                          flags=backup=1;display=My Region;logical;flashimg=1
 /my_heytap                ext4     my_heytap.x                               flags=backup=1;display=My Heytap;logical;flashimg=1
 /my_stock                 ext4     my_stock.x                                flags=backup=1;display=My Stock;logical;flashimg=1
 /my_preload               ext4     my_preload.x                              flags=backup=1;display=My Preload;logical;flashimg=1
-/cdt_engineering          emmc     /dev/block/by-name/cdt_engineering        flags=backup=1;display=cdt_engineering;flashimg=1
+/cdt_engineering          emmc     /dev/block/by-name/cdt_engineering        flags=backup=1;display=CDT Engineering;flashimg=1
 /metadata                 ext4     /dev/block/by-name/md_udc                 flags=backup=1;display=MetaData;flashimg=1
 /cache                    ext4     /dev/block/by-name/cache                  flags=backup=1;display=Cache;flashimg=1
 /data                     ext4     /dev/block/by-name/userdata               flags=backup=1;display=Data;flashimg=1
