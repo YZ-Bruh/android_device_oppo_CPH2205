@@ -12,6 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
+# Inherit from PBRP-common stuff, if building PBRP.
+$(call inherit-product-if-exists, vendor/pb/config/common.mk)
+
 # Inherit from CPH2205 device
 $(call inherit-product, device/oppo/CPH2205/device.mk)
 
@@ -20,3 +23,5 @@ PRODUCT_NAME := twrp_CPH2205
 PRODUCT_BRAND := OPPO
 PRODUCT_MODEL := CPH2205
 PRODUCT_MANUFACTURER := oppo
+
+PRODUCT_GMS_CLIENTID_BASE := android-$(PRODUCT_MANUFCATURER)
