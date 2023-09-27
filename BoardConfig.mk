@@ -109,6 +109,7 @@ TW_INCLUDE_FBE_METADATA_DECRYPT =:true
 
 # Recovery
 TARGET_VENDOR_PROP := $(DEVICE_PATH)/properties/vendor.prop
+TARGET_SYSTEM_PROP := $(DEVICE_PATH)/properties/system.prop
 
 BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_USERIMAGES_USE_EXT4 := true
