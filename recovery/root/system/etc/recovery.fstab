@@ -57,8 +57,8 @@ auto                      vfat     /devices/platform/11200000.usb3_xhci*     fla
 /dtbo                     emmc     /dev/block/by-name/dtbo                   flags=backup=1;display=DTBO;flashimg=1
 /otp                      emmc     /dev/block/by-name/otp                    flags=backup=1;display=OTP;flashimg=1
 /custom                   ext4     /dev/block/by-name/odm                    flags=backup=1;display=Custom;flashimg=1
-/external_sd              vfat     /dev/block/mmcblk0p1                      flags=display=MicroSD Card
-/usb_otg                  vfat     /dev/block/sdd1                           flags=display=USB-OTG
+/external_sd              vfat     /dev/block/mmcblk0p1                      flags=display=MicroSD Card;storage;wipeingui;removable;fsflags="utf8"
+/usb_otg                  vfat     /dev/block/sdd1                           flags=display=USB-OTG;storage;wipeingui;removable;fsflags="utf8"
 /vbmeta                   emmc     /dev/block/by-name/vbmeta                 flags=backup=1;display=VBMeta;flashimg=1
 /reserve2                 emmc     /dev/block/by-name/reserve2               flags=backup=1;display=Reserve 2;flashimg=1
 /opporeserve              ext4     /dev/block/by-name/opporeserve2           flags=backup=1;display=OPPO Reserve;flashimg=1
