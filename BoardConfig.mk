@@ -73,7 +73,7 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
 BOARD_SUPER_PARTITION_SIZE := 9126805504 # TODO: Fix hardcoded value
 BOARD_SUPER_PARTITION_GROUPS := oppo_dynamic_partitions
-BOARD_OPPO_DYNAMIC_PARTITIONS_PARTITION_LIST := system vendor product my_odm my_product my_engineering my_company.netease my_carrier.vdf my_region.japan my_heytap.x my_stock.x my_preload.x
+BOARD_OPPO_DYNAMIC_PARTITIONS_PARTITION_LIST := system vendor product
 BOARD_OPPO_DYNAMIC_PARTITIONS_SIZE := 9122611200 # TODO: Fix hardcoded value
 
 # AVB
