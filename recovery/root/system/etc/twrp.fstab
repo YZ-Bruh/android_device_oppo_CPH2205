@@ -2,15 +2,7 @@
 /vendor                   ext4     vendor                                    flags=backup=1;display=Vendor;logical;flashimg=1
 /product                  ext4     product                                   flags=backup=1;display=Product;logical;flashimg=1
 /odm                      ext4     my_odm                                    flags=backup=1;display=ODM;logical;flashimg=1
-/my_product               ext4     my_product                                flags=backup=1;display=My Product;logical;flashimg=1
-/my_engineering           ext4     my_engineering                            flags=backup=1;display=My Engineering;logical;flashimg=1
-/my_company               ext4     my_company.netease                        flags=backup=1;display=My Company;logical;flashimg=1
-/my_carrier               ext4     my_carrier.vdf                            flags=backup=1;display=My Carrier;logical;flashimg=1
-/my_region                ext4     my_region.japan                           flags=backup=1;display=My Region;logical;flashimg=1
-/my_heytap                ext4     my_heytap.x                               flags=backup=1;display=My Heytap;logical;flashimg=1
-/my_stock                 ext4     my_stock.x                                flags=backup=1;display=My Stock;logical;flashimg=1
-/my_preload               ext4     my_preload.x                              flags=backup=1;display=My Preload;logical;flashimg=1
-/cdt_engineering          emmc     /dev/block/by-name/cdt_engineering        flags=backup=1;display=cdt_engineering;flashimg=1
+/cdt_engineering          emmc     /dev/block/by-name/cdt_engineering        flags=backup=1;display=CDT Engineering;flashimg=1
 /metadata                 ext4     /dev/block/by-name/md_udc                 flags=backup=1;display=MetaData;flashimg=1
 /cache                    ext4     /dev/block/by-name/cache                  flags=backup=1;display=Cache;flashimg=1
 /data                     ext4     /dev/block/by-name/userdata               flags=backup=1;display=Data;flashimg=1
@@ -57,8 +49,10 @@ auto                      vfat     /devices/platform/11200000.usb3_xhci*     fla
 /dtbo                     emmc     /dev/block/by-name/dtbo                   flags=backup=1;display=DTBO;flashimg=1
 /otp                      emmc     /dev/block/by-name/otp                    flags=backup=1;display=OTP;flashimg=1
 /custom                   ext4     /dev/block/by-name/odm                    flags=backup=1;display=Custom;flashimg=1
-/external_sd              vfat     /dev/block/mmcblk0p1                      flags=display=MicroSD Card;storage;wipeingui;removable;fsflags="utf8"
-/usb_otg                  vfat     /dev/block/sdd1                           flags=display=USB-OTG;storage;wipeingui;removable;fsflags="utf8"
 /vbmeta                   emmc     /dev/block/by-name/vbmeta                 flags=backup=1;display=VBMeta;flashimg=1
 /reserve2                 emmc     /dev/block/by-name/reserve2               flags=backup=1;display=Reserve 2;flashimg=1
 /opporeserve              ext4     /dev/block/by-name/opporeserve2           flags=backup=1;display=OPPO Reserve;flashimg=1
+
+#Removable (by device)
+/external_sd              vfat     /dev/block/mmcblk0p1                      flags=display=MicroSD Card;storage;wipeingui;removable;fsflags="utf8"
+/usb_otg                  vfat     /dev/block/sdd1                           flags=display=USB-OTG;storage;wipeingui;removable;fsflags="utf8"
